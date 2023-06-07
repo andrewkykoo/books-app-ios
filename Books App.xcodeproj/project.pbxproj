@@ -12,6 +12,9 @@
 		B5C331C02A30EB9C00B16B00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5C331BF2A30EB9C00B16B00 /* Assets.xcassets */; };
 		B5C331C32A30EB9C00B16B00 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5C331C22A30EB9C00B16B00 /* Preview Assets.xcassets */; };
 		B5C331D02A30ED3700B16B00 /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = B5C331CF2A30ED3700B16B00 /* Data.json */; };
+		B5C331D22A30FC8700B16B00 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C331D12A30FC8700B16B00 /* DataService.swift */; };
+		B5C331D42A30FCCD00B16B00 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C331D32A30FCCD00B16B00 /* Book.swift */; };
+		B5C331D62A30FCDA00B16B00 /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C331D52A30FCDA00B16B00 /* BookModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		B5C331BF2A30EB9C00B16B00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5C331C22A30EB9C00B16B00 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B5C331CF2A30ED3700B16B00 /* Data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
+		B5C331D12A30FC8700B16B00 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		B5C331D32A30FCCD00B16B00 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		B5C331D52A30FCDA00B16B00 /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,7 @@
 		B5C331C92A30EC4900B16B00 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B5C331D32A30FCCD00B16B00 /* Book.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -91,6 +98,7 @@
 		B5C331CC2A30EC7100B16B00 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				B5C331D52A30FCDA00B16B00 /* BookModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -106,6 +114,7 @@
 		B5C331CE2A30EC8D00B16B00 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				B5C331D12A30FC8700B16B00 /* DataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -181,6 +190,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5C331D62A30FCDA00B16B00 /* BookModel.swift in Sources */,
+				B5C331D42A30FCCD00B16B00 /* Book.swift in Sources */,
+				B5C331D22A30FC8700B16B00 /* DataService.swift in Sources */,
 				B5C331BE2A30EB9B00B16B00 /* ContentView.swift in Sources */,
 				B5C331BC2A30EB9B00B16B00 /* Books_AppApp.swift in Sources */,
 			);
