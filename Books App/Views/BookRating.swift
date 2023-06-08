@@ -17,9 +17,12 @@ struct BookRating: View {
         VStack {
             NavigationLink(destination: BookContent(book: book)) {
                 VStack {
-                    Text("Click below to read")
+                    Text("Start reading!")
                         .font(.title)
                         .accentColor(.black)
+                    Image(systemName: "arrow.down")
+                        .accentColor(.black)
+                        .padding([.bottom], 10)
                     
                     Image("cover\(book.id)")
                         .resizable()
@@ -37,16 +40,24 @@ struct BookRating: View {
                     Text("Mark as favourite")
                         .accentColor(.black)
                     
-                    Image(systemName: book.isFavourite ? "star.fill" : "star")
+                    Image(systemName: book.isFavourite ? "hand.thumbsup.fill" : "hand.thumbsup")
                         .resizable()
                         .frame(width: 20, height: 20)
-                        .accentColor(.yellow)
+                        .accentColor(.blue)
                 }
                 .padding()
             }
             
             // TODO: Rating Scale
-
+            HStack {
+                ForEach(1...5, id: \.self) { index in
+                    Image(systemName: index <= book.rating ? "star.fill" : "star")
+                        .foregroundColor(index <= book.rating ? .yellow : .gray)
+                        .onTapGesture {
+                            model.updateRating(bookId: book.id, rating: index)
+                        }
+                }
+            }
         }
     }
 }

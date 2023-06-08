@@ -23,4 +23,10 @@ class ViewModel: ObservableObject {
         
     }
     
+    func updateRating(bookId: Int, rating: Int) {
+        if let index = books.firstIndex(where: {$0.id == bookId}) {
+            books[index].rating = rating
+        }
+    }
+    
 }

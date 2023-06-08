@@ -27,10 +27,10 @@ struct BookPreview: View {
                     Spacer()
                     
                     if book.isFavourite {
-                        Image(systemName: "star.fill")
+                        Image(systemName: "hand.thumbsup.fill")
                             .resizable()
                             .frame(width: 20, height: 20)
-                            .foregroundColor(.yellow)
+                            .foregroundColor(.blue)
                     }
                 }
                 
