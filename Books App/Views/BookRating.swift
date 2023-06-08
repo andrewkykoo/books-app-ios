@@ -15,23 +15,37 @@ struct BookRating: View {
     
     var body: some View {
         VStack {
-            Text("Tap to read")
-                .font(.title)
+            NavigationLink(destination: BookContent(book: book)) {
+                VStack {
+                    Text("Click below to read")
+                        .font(.title)
+                        .accentColor(.black)
+                    
+                    Image("cover\(book.id)")
+                        .resizable()
+                        .scaledToFit()
+                }
+            }
             
-            Image("cover\(book.id)")
-                .resizable()
-                .scaledToFit()
             
             Button {
                 // update isFavorite property
                 model.updateFavourite(bookId: book.id)
                 
             } label: {
-                Image(systemName: book.isFavourite ? "star.fill" : "star")
-                    .resizable()
-                    .frame(width: 20, height: 20)
-                    .accentColor(.yellow)
+                HStack {
+                    Text("Mark as favourite")
+                        .accentColor(.black)
+                    
+                    Image(systemName: book.isFavourite ? "star.fill" : "star")
+                        .resizable()
+                        .frame(width: 20, height: 20)
+                        .accentColor(.yellow)
+                }
+                .padding()
             }
+            
+            // TODO: Rating Scale
 
         }
     }
@@ -41,7 +55,8 @@ struct BookRating_Previews: PreviewProvider {
     static var previews: some View {
         
         let model = ViewModel()
-        
+
         BookRating(book: model.books[1])
+   
     }
 }

@@ -17,6 +17,7 @@
 		B5C331D62A30FCDA00B16B00 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C331D52A30FCDA00B16B00 /* ViewModel.swift */; };
 		B5C331DA2A31085700B16B00 /* BookPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C331D92A31085700B16B00 /* BookPreview.swift */; };
 		B5C331DC2A311B6D00B16B00 /* BookRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C331DB2A311B6D00B16B00 /* BookRating.swift */; };
+		B5C331DE2A313E5600B16B00 /* BookContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C331DD2A313E5500B16B00 /* BookContent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		B5C331D52A30FCDA00B16B00 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		B5C331D92A31085700B16B00 /* BookPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookPreview.swift; sourceTree = "<group>"; };
 		B5C331DB2A311B6D00B16B00 /* BookRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRating.swift; sourceTree = "<group>"; };
+		B5C331DD2A313E5500B16B00 /* BookContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookContent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				B5C331BD2A30EB9B00B16B00 /* BookList.swift */,
 				B5C331D92A31085700B16B00 /* BookPreview.swift */,
 				B5C331DB2A311B6D00B16B00 /* BookRating.swift */,
+				B5C331DD2A313E5500B16B00 /* BookContent.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			files = (
 				B5C331D62A30FCDA00B16B00 /* ViewModel.swift in Sources */,
 				B5C331DC2A311B6D00B16B00 /* BookRating.swift in Sources */,
+				B5C331DE2A313E5600B16B00 /* BookContent.swift in Sources */,
 				B5C331D42A30FCCD00B16B00 /* Book.swift in Sources */,
 				B5C331D22A30FC8700B16B00 /* DataService.swift in Sources */,
 				B5C331DA2A31085700B16B00 /* BookPreview.swift in Sources */,

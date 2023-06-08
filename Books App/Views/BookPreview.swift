@@ -29,6 +29,8 @@ struct BookPreview: View {
                     if book.isFavourite {
                         Image(systemName: "star.fill")
                             .resizable()
+                            .frame(width: 20, height: 20)
+                            .foregroundColor(.yellow)
                     }
                 }
                 
